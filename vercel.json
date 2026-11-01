@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/portfolio-website/index.html" },
+    { "source": "/css/(.*)", "destination": "/portfolio-website/css/$1" },
+    { "source": "/js/(.*)", "destination": "/portfolio-website/js/$1" },
+    { "source": "/images/(.*)", "destination": "/portfolio-website/images/$1" },
+    { "source": "/(.*)", "destination": "/portfolio-website/$1" }
+  ]
+}
+

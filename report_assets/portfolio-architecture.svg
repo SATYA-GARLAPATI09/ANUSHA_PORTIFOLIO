@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture of a student portfolio website</title>
+  <desc id="desc">Browser loads a portfolio website built from HTML, CSS and JavaScript. JavaScript validates an optional contact form.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#1f5ea8"/></marker></defs>
+  <rect width="1600" height="820" fill="#f8fbff"/>
+  <text x="800" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#123c70">Student Portfolio Website - Front-End Architecture</text>
+  <rect x="95" y="285" width="285" height="215" rx="24" fill="#ffffff" stroke="#1f5ea8" stroke-width="5"/>
+  <text x="238" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#123c70">Visitor</text>
+  <text x="238" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" fill="#123c70">Web browser</text>
+  <path d="M410 392 L530 392" stroke="#1f5ea8" stroke-width="8" marker-end="url(#arrow)"/>
+  <text x="470" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#1f5ea8">loads site</text>
+  <rect x="560" y="185" width="470" height="415" rx="28" fill="#ffffff" stroke="#268653" stroke-width="5"/>
+  <text x="795" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#17623b">Portfolio Website</text>
+  <rect x="610" y="285" width="165" height="220" rx="16" fill="#fff0e9" stroke="#e34f26" stroke-width="4"/>
+  <text x="692" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#bf381a">HTML</text>
+  <text x="692" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#6f2b1c">sections and</text>
+  <text x="692" y="432" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#6f2b1c">content</text>
+  <rect x="815" y="285" width="165" height="220" rx="16" fill="#e7f3ff" stroke="#1572b6" stroke-width="4"/>
+  <text x="897" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#0d5991">CSS</text>
+  <text x="897" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#123c70">layout and</text>
+  <text x="897" y="432" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#123c70">responsive style</text>
+  <path d="M1060 305 L1190 305" stroke="#1f5ea8" stroke-width="8" marker-end="url(#arrow)"/>
+  <path d="M1060 480 L1190 480" stroke="#1f5ea8" stroke-width="8" marker-end="url(#arrow)"/>
+  <rect x="1220" y="190" width="290" height="210" rx="22" fill="#fffbd8" stroke="#d3b500" stroke-width="5"/>
+  <text x="1365" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#8b7500">JavaScript</text>
+  <text x="1365" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#685800">navigation and</text>
+  <text x="1365" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#685800">form validation</text>
+  <rect x="1220" y="445" width="290" height="185" rx="22" fill="#f1eaff" stroke="#8255bd" stroke-width="5"/>
+  <text x="1365" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#563687">Contact form</text>
+  <text x="1365" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#563687">optional client-side</text>
+  <text x="1365" y="596" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#563687">feedback only</text>
+  <text x="800" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#42566f">No server-side storage is claimed in this front-end demonstration.</text>
+</svg>

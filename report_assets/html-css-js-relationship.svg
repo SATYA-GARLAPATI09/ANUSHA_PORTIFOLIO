@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Relationship between HTML, CSS and JavaScript</title>
+  <desc id="desc">Three connected cards show HTML for structure, CSS for presentation and JavaScript for behaviour, together producing a web page.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#324a67"/></marker></defs>
+  <rect width="1600" height="760" fill="#f8fbff"/>
+  <text x="800" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#123c70">How HTML, CSS and JavaScript Work Together</text>
+  <rect x="115" y="195" width="360" height="310" rx="28" fill="#fff0e9" stroke="#e34f26" stroke-width="6"/>
+  <text x="295" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#bf381a">HTML</text>
+  <text x="295" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#6f2b1c">Structure</text>
+  <text x="295" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#6f2b1c">headings, text, links,</text>
+  <text x="295" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#6f2b1c">forms and sections</text>
+  <rect x="620" y="195" width="360" height="310" rx="28" fill="#e7f3ff" stroke="#1572b6" stroke-width="6"/>
+  <text x="800" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#0d5991">CSS</text>
+  <text x="800" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#123c70">Presentation</text>
+  <text x="800" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#123c70">colours, typography,</text>
+  <text x="800" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#123c70">layout and responsiveness</text>
+  <rect x="1125" y="195" width="360" height="310" rx="28" fill="#fffbd8" stroke="#d3b500" stroke-width="6"/>
+  <text x="1305" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#8b7500">JavaScript</text>
+  <text x="1305" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#685800">Behaviour</text>
+  <text x="1305" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#685800">events, validation,</text>
+  <text x="1305" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#685800">DOM updates and logic</text>
+  <path d="M480 350 L600 350" stroke="#324a67" stroke-width="7" marker-end="url(#arrow)"/>
+  <path d="M985 350 L1105 350" stroke="#324a67" stroke-width="7" marker-end="url(#arrow)"/>
+  <path d="M800 535 L800 608" stroke="#324a67" stroke-width="7" marker-end="url(#arrow)"/>
+  <rect x="540" y="625" width="520" height="86" rx="18" fill="#e8f6ef" stroke="#268653" stroke-width="4"/>
+  <text x="800" y="681" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#17623b">Responsive, interactive web page</text>
+</svg>
