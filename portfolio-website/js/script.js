@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnResetPhoto = document.getElementById("btnResetPhoto");
 
   // Show friendly toast notification
-  function showToast(title, message, duration = 6000) {
+  function showToast(title, message, actionsHtml = "", duration = 9000) {
     const existing = document.querySelector(".photo-toast");
     if (existing) existing.remove();
 
     const toast = document.createElement("div");
     toast.className = "photo-toast";
-    toast.innerHTML = `<strong>${title}</strong><span>${message}</span>`;
+    toast.innerHTML = `<strong>${title}</strong><span>${message}</span>${actionsHtml ? `<div class="toast-actions">${actionsHtml}</div>` : ""}`;
     document.body.appendChild(toast);
 
     setTimeout(() => {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Load saved photo from localStorage if present
   if (profileAvatarImg) {
-    const savedPhoto = localStorage.getItem("anusha_portfolio_photo");
+    const savedPhoto = localStorage.getItem("anusha_portfolio_photo_v2");
     if (savedPhoto) {
       profileAvatarImg.src = savedPhoto;
       if (btnResetPhoto) btnResetPhoto.style.display = "inline-flex";
@@ -91,19 +91,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Persist to localStorage for client-side persistence
         try {
-          localStorage.setItem("anusha_portfolio_photo", dataUrl);
+          localStorage.setItem("anusha_portfolio_photo_v2", dataUrl);
           if (btnResetPhoto) btnResetPhoto.style.display = "inline-flex";
           console.log("[Profile Photo] Saved new photo to localStorage.");
 
+          const actions = `
+            <a href="${dataUrl}" download="profile.jpg" class="toast-link-btn">💾 Download profile.jpg</a>
+            <a href="https://github.com/SATYA-GARLAPATI09/ANUSHA_PORTIFOLIO/upload/main/portfolio-website/images" target="_blank" rel="noopener" class="toast-link-btn">🚀 Deploy to Vercel via GitHub</a>
+          `;
+
           showToast(
             "📷 Profile Photo Updated!",
-            "Your photo is saved and visible in this browser. To ensure all visitors see your photo when deployed on Vercel, simply save your photo file as <b>images/profile.jpg</b> in this project!"
+            "Your new photo is now active on this device! To make it permanent online for EVERYONE visiting your Vercel link, download it as <b>profile.jpg</b> and drop it into your GitHub repository.",
+            actions,
+            12000
           );
         } catch (err) {
           console.warn("[Profile Photo] Could not save to localStorage (storage limit):", err);
           showToast(
-            "📷 Photo Applied!",
-            "Image displayed in session. For permanent Vercel deployment, save it as <b>images/profile.jpg</b>."
+            "📷 Photo Displayed!",
+            "Image applied in session. For permanent Vercel deployment, save it as <b>images/profile.jpg</b>."
           );
         }
       };
@@ -114,12 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Handle photo reset
   if (btnResetPhoto && profileAvatarImg) {
     btnResetPhoto.addEventListener("click", function () {
-      localStorage.removeItem("anusha_portfolio_photo");
+      localStorage.removeItem("anusha_portfolio_photo_v2");
       profileAvatarImg.src = "images/profile.jpg";
       btnResetPhoto.style.display = "none";
       if (profilePhotoInput) profilePhotoInput.value = "";
-      console.log("[Profile Photo] Reset to default avatar.");
-      showToast("🔄 Reset to Default", "Profile photo reverted to default image/avatar.", 3000);
+      console.log("[Profile Photo] Reset to default official photo.");
+      showToast("🔄 Reset Complete", "Profile photo reverted to Anusha's official photo.", "", 3000);
     });
   }
 
